@@ -1,5 +1,5 @@
-# Solaris-Wiki
-Solaris wiki is a wiki for a game "A Core Game" on roblox by Solaris Development Group.
+# A Core Game Wiki
+A Core Game wiki is a wiki for a game "A Core Game" on roblox by Solaris Development Group.
 This is only JSON file, which means that it is for the wiki information itself.
 What you should know:
 Content1-3 it at the left, content 4-6 is at the right, content 7-9 is at the left again, you understand where will be content 10-12.
