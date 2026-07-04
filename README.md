@@ -9,3 +9,6 @@ Thanks for contributing! You can also be added at "Wiki editors" page, but it's 
 Thanks again!!!
 
 Everywhere where is "something went wrong" is just for organizing, you can see that it says "Events", or "Locatiosn", or something else., since syntax requires for there to be at least something. Don't remove it!
+
+
+Meltdown is an example of what the JSON supports.
