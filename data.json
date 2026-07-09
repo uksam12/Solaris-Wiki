@@ -5,10 +5,10 @@
 
   "Meltdown": { "title": "Meltdown",
   "subtitle": "Event",
-  "content1": "Meltdown is an event caused by shield detonation. You can trigger it by heating the reactor core above 3000°C and waiting for the shield to explode. There are 3 phases of Meltdown. The first phase is the shutdown phase, where you're able to shut down the reactor core and earn the badge ''Emergency protocols''. In Phase 2, you're not able to do anything (yet — v1.1.0 should add EDEN, where you'll be able to try to shut down the reactor). In phase 3, you need to evacuate.",
-  "content2": "During meltdown you can earn 6 badges: Meltdown (experience meltdown), Emergency protocols (shut down the reactor), Why would you do that? (press the E-coolant button 30 seconds before it detonates), Hey, wanna see me speedrun? (shut down the PRC really quickly), Seriously? (meet shutdown requirements early but don't shut it down), Can't rely on corporate... (escape outside and wait until the explosion), and Locked in (survive in the bunker).",
-  "content3": "During phase 1, it plays ''[V2] Chaotic Fusion'' by Zadonoace. In phase 2, it plays ''THOUGHT DEPRIVATION'' by Zadonoace and TWIXY141.",
-  "content4": "Phase 1 is the shutdown phase. You can attempt shut down.",
+  "content1": "Meltdown is an event triggered by the reactor's shield detonation. The only current method of getting this event to happen is by heating the reactor core above 3000°C and waiting for the shield to explode. The meltdown has 3 phases, the first one being the shutdown phase, where you can initialise the EMTS systems within a short window and obtain the ''Emergency protocols'' badge. In Phase 2 (Thermal Runaway), you're not able to do anything (yet — v1.1.0 should add EDEN, where you'll be able to try to shut down the reactor). In phase 3, the reactor meltdown is completely unstoppable and your only goal is to evacuate the facility. Phase 4. The core ruptures and forms into a black hole and eventually detonates.",
+  "content2": "During meltdown you can earn 6 badges: Meltdown (Have the full event play out from phases 1-4), Emergency protocols (shut down the reactor), Why would you do that? (press the E-coolant button 30 seconds before it detonates), Hey, wanna see me speedrun? (shut down the PRC really quickly), Seriously? (meet shutdown requirements early but don't shut it down), Can't rely on corporate... (escape outside and wait until the explosion), and Locked in (survive in the bunker).",
+  "content3": "During phase 1, it plays ''[V2] Chaotic Fusion'' by Zadonoace. In phase 2 and 3, it plays ''THOUGHT DEPRIVATION'' by Zadonoace and TWIXY141.",
+  "content4": "",
   "content5": "",
   "content6": "",
   "content7": "",
@@ -24,7 +24,7 @@
  },
   "Stall": { "title": "Stall",
   "subtitle": "Event",
-  "content1": "Stall is an event caused by low reaction levels. You can trigger it by keeping the PRC below 0°C. After the core stalls, you'll need to wait a few minutes before you can start it up again. Once the core stalls, the lights will turn off for a few minutes. You can turn on the emergency generators to turn the lights back on, but this won't work if they were already on before, and it won't increase the waiting time until you can start up the reactor again.",
+  "content1": "Stall is an event caused by low temperatures. You can trigger it by keeping the PRC below 0°C. After the core stalls, you'll need to wait a few minutes for ReactorLink's systems to restart so you can restart the core. During this short window you can sync the generators with the grid (which will restore the power), but this won't work if they were already on before, and it won't increase the waiting time until you can start up the reactor again.",
   "content2": "You can only earn one badge here, ''Stall''. Stall does not cause instability. Right now there is no OST for Stall.",
   "image": "stall.png"
  },
@@ -45,25 +45,25 @@
  },
   "Startup": { "title": "Startup",
   "subtitle": "Event",
-  "content1": "Startup is an event where you start up the reactor. If you are a researcher or reactor operator, you'll get credits from it. There is also a chance of startup failure. To do startup, you need to scan the keycard, press the shield formation button, and press the red button (picture 1). After that, the lasers will start creating a shield and starting up the PRC (picture 2).",
+  "content1": "Startup or Ignition is an event in which the reactor lasers initialise and a core forms. If you are a researcher or reactor operator, you'll earn credits from it. There is also a chance of startup failure. To do startup, you need to scan the keycard, press the shield formation button, and press the red button (picture 1). After that, the lasers will start creating a shield and starting up the PRC (picture 2).",
   "content2": "Startup has its own OST, ''Quantum Quake'' by ZadonoAce. There is no badge for startup.",
   "image": "startup.png"
  },
   "Startup failure": { "title": "Startup failure",
   "subtitle": "Event",
-  "content1": "Startup failure is an event where startup fails. To do that, you need to be lucky and simply wait without touching the startup button. Wait until shield strength drops to 20-30, since below that you'll need to remake the shield again. After that, there is a chance startup failure will occur. You will need to restart the PRC later.",
+  "content1": "Startup failure is an event where the shield fails to take in the sudden reaction from the core and bursts. To trigger this, you'll need to be lucky and simply wait without touching the startup button. Wait until shield strength drops to 20-30, since below that you'll need to restart the shield formation sequence. After that, there is a chance startup failure will occur. You will need to restart the PRC later.",
   "content2": "Startup failure uses the same OST as Startup, ''Quantum Quake'' by ZadonoAce. There is a badge for startup failure named Miscalculated.",
   "image": "startupfail.png"
  },
   "Shutdown": { "title": "Shutdown",
   "subtitle": "Event",
-  "content1": "Shutdown is an event which happens after a successful EMTS attempt.",
+  "content1": "Shutdown is an event which happens after a successful EMTS attempt. This is where ReactorLink succesfully repairs and re-initialises the Stabilisation Lasers, eventually cooling down the core and triggering a reaction loss.",
   "content2": ""
  },
   "EDEN": { "title": "EDEN",
   "subtitle": "Event, v1.1.0",
-  "content1": "There is no info right now about EDEN. This event should overload the stabilization lasers in phase 2 to attempt shutdown again.",
-  "content2": "There is no info on whether there will be any OST or badges for it."
+  "content1": "There is no info right now about EDEN. This event supposedly overloads the stabilization lasers in phase 2 which triggers a reaction loss, and shuts down the core.",
+  "content2": "There is no info on whether there will be any OST or badges for it. It is suspected that a remixed version of Thought Deprivation will play during the laser overload process."
  },
   "EMTS": { "title": "EMTS",
   "subtitle": "Event",
@@ -73,7 +73,7 @@
  },
   "Maintenance mode": { "title": "Maintenance mode",
   "subtitle": "Event",
-  "content1": "Maitenance mode is an event caused by a player pressing the ''Maitenance mode'' button. It shuts down the PRC, and to start it up again, the player needs to refuel the lasers.",
+  "content1": "Maintenance mode is an event caused by a player pressing the ''Maintenance mode'' button. It shuts down the PRC, and to start it up again, the player needs to refuel the lasers.",
   "content2": "To refuel the lasers, take fuel cells near the SL3 chamber entry, then go to upper level 1 in the PRC chamber. Unlock the empty cells and place the full fuel cells in them. Repeat until they're all filled, then go to the Maitenance mode controls, complete the check, and start up the core again.",
   "content3": "There is no OST or badge for maintenance mode, but it gives some credits and experience points.",
   "image": "maitenancemode.png"
@@ -85,13 +85,13 @@
 
   "Outside": { "title": "Outside",
   "subtitle": "Location, SL1",
-  "content1": "Outside is a location in SL1.",
+  "content1": "Outside is a location in SL1. It appears to be located in a repurposed dug-out quarry, featuring trees, two entrances and a tunnel to an inaccessible area. There is also an administration building, which has no interior as of now.",
   "content2": "You can get the badge ''Can't rely on corporate...'' by being there while the PRC explodes.",
   "image": "outside.png"
  },
   "SL1": { "title": "SL1",
   "subtitle": "Location, Sublevel",
-  "content1": "SL1 is the highest SL. It has a few locations like the kitchen, access to outside, the entrance zone, entrance zone (exit), access to the upper fan shaft, the reception zone, and the administration office.",
+  "content1": "SL1, or topside is the first level you will come across in the site. It has a few locations like the kitchen, access to outside, the entrance zone, entrance zone (exit), access to the upper fan shaft, the reception zone, and the administration office.",
   "content2": "There are 2 fuse boxes in SL1.",
   "image": "sl1.png"
  },
@@ -103,12 +103,12 @@
  },
   "Facility administration": { "title": "Facility administration zone",
   "subtitle": "Location, SL1",
-  "content1": "Administration zone is a room in SL1. There is not that much information about it.",
+  "content1": "Administration zone is a room in SL1. There is not that much information about it. However, there is an office resembling the one from Five Night's at Freddy's 1.",
   "image": "adminr.png"
  },
   "SL2": { "title": "SL2",
   "subtitle": "Location, Sublevel",
-  "content1": "SL2 is a maintenance sublevel, containing the Emergency Bunker, Emergency Generators, cooling pumps, air pumps, cargo bay, maintenance office, and mines.",
+  "content1": "SL2 is a maintenance sublevel, containing the Emergency Bunker, Emergency Generators, cooling pumps, oxygen pumps, cargo bay, maintenance office, and mines.",
   "content2": "There are 5 fuse boxes in SL2.",
   "image": "sl2.png"
  },
@@ -129,10 +129,10 @@
   "content1": "Communications room has zero functionality. It might be added in later versions, but that's not confirmed.",
   "image": "communicationr.png"
  },
-  "Air pumps": { "title": "Air pumps",
+  "Air pumps": { "title": "Oxygen pumps",
   "subtitle": "Location, SL2",
-  "content1": "Air pumps is an area near the coolant pumps in SL2. It has zero functionality right now.",
-  "image": "airr.png"
+  "content1": "Oxygen pumps is an area near the coolant pumps in SL2. It has zero functionality right now. It's suspected they pump oxygen into the facility.",
+  "image": "airp.png"
  },
   "Mines": { "title": "Mines",
   "subtitle": "Location, SL2",
@@ -158,9 +158,9 @@
   "content2": "You can control and view the core there, and also see the developer wall.",
   "image": "controlr.png"
  },
-  "Server farm": { "title": "Server farm",
+  "Server farm": { "title": "Server Array",
   "subtitle": "Location, SL3",
-  "content1": "Server farm is a location in SL3. You can view server and reactorlink stability there.",
+  "content1": "Server Array is a location in SL3. Although it has limited functionality as of now, there is an interactable terminal that lists server and ReactorLink statuses.",
   "image": "servers.png"
  },
   "Laboratories": { "title": "Laboratories",
@@ -190,141 +190,15 @@
   "subtitle": "If you see this, something might have gone wrong. Report it to me!"
 },
 
-
-
-
-"robert": {"title": "Robert",
-"subtitle": "Robert",
-"content1": "Robert is an employee which is selling items and furniture. He was in cafeteria in older versions. In item store he is called ''Robert'', in labs he is ''Robert²'', in labs floor 2 he is named ''Robert³'' and on the 3rd floor ''Robert⁴''.",
-"image": "robert.png"
-},
   "Robert's furniture": { "title": "Robert's furniture",
   "subtitle": "Shop, SL3",
   "content1": "Robert's furniture is a shop in SL3.",
   "content2": "You can buy furniture like barrels, chairs, desks, and more for your lab."
  },
-"Blue Barrel": { "title": "Blue Barrel",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A blue barrel. Costs 15$.",
-  "image": "Blue Barrel.png"
- },
-  "Yellow barrel": { "title": "Yellow barrel",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A yellow barrel. Costs 15$.",
-  "content3": "",
-  "image": "Yellow Barrel.png"
- },
-  "Red barrel": { "title": "Red barrel",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A red barrel. Might  contain some unknown liquids. Costs 15$.",
-  "content3": "",
-  "image": "Red Barrel.png"
- },
-  "Green barrel": { "title": "Green barrel",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A green barrel. Costs 15$.",
-  "image": "Green Barrel.png"
- },
-  "Chair": { "title": "Chair",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A metal folding chair. Costs 25$.",
-  "image": "Chair.png"
- },
-  "Glass Table": { "title": "Glass Table",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A table, made of glass. Please do not stack bricks on top of it. Costs 40$.",
-  "image": "Glass Table.png"
- },
-  "Office Desk": { "title": "Office Desk",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "An office desk. Comes with equipped with variety of things, including a laptop. Costs 110$.",
-  "image": "Office Desk.png"
- },
-  "Comfy chair": { "title": "Comfy chair",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A very comfortable-to-sit-in chair.",
-  "content2": "",
-  "image": "Comfy chair.png"
- },
-  "Plant": { "title": "Plant",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A plant. Please do not disturb it.",
-  "image": "Plant.png"
- },
-  "Stool": { "title": "Stool",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "Comfort---",
-  "image": "Stool.png"
- },
-  "Table": { "title": "Table",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "It's a table.",
-  "content3": "",
-  "image": "Table.png"
- },
-  "Trash bin": { "title": "Trash bin",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "All go-to for all unwanted items.",
-  "content3": "",
-  "image": "Trash bin.png"
- },
-  "Divider": { "title": "Divider",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "Divide your lab into different sections.",
-  "image": "Divider.png"
- },
-  "Shelf": { "title": "Shelf",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "An empty shelf, used for storing decorations or miscellaneous stuff.",
-  "image": "Shelf.png"
- },
-  "Warehouse": { "title": "Warehouse",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "An EXTRA large shelf, used for the same purpose as the normal one.",
-  "image": "Warehouse.png"
- },
-  "Locker": { "title": "Locker",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A locker, for storing everything you need.",
-  "image": "Locker.png"
- },
-  "Couch": { "title": "Couch",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "A comfy couch, good for parties, or a weekend's nap.",
-  "image": "Couch.png"
- },
-  "Sample locker": { "title": "Sample locker",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "This locker can be used to store various things. Hazardous ones too!",
-  "content3": "",
-  "image": "Sample.png"
- },
-  "Specimen": { "title": "Specimen",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "Whatever organic or biological, it can't harm you from there.",
-  "image": "Specimen.png"
- },
-  "Table with cabinets": { "title": "Table with cabinets",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "Good for storing items and hoarding useless items on the table. Two in one!",
-  "image": "Table with.png"
- },
-  "Lead-lined box": { "title": "Lead-lined box",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "Best item to store anything potentially dangerous! Works nicely as mini-fridge for rad-away.",
-  "content3": "",
-  "image": "Lead-lined.png"
- },
-  "Contained Robert": { "title": "Contained Robert",
-  "subtitle": "Furniture, Robert's Furniture",
-  "content1": "It's not his original form, but his duplicates are valuable. too.",
-  "image": "Contained.png"
- },
   "Robert's shop": { "title": "Robert's Shop",
   "subtitle": "Shop, SL3",
   "content1": "Robert's shop is located near the control room, and you can buy a lot of items there.",
-  "content2": "Items: Speed coil, Gravity coil, Flashlight, Peter Griffin, Single battery, Ion battery, Fuse, Rad-away, Jerry can.",
-  "image": "robertshop.png"
+  "content2": "Items: Speed coil, Gravity coil, Flashlight, Peter Griffin, Single battery, Ion battery, Fuse, Rad-away, Jerry can."
  },
   "Speed coil": { "title": "Speed coil",
   "subtitle": "Item at Robert's shop",
@@ -386,7 +260,7 @@
 },
 
   "Controls": { "title": "Controls",
-  "subtitle": "Mechanic",
+  "subtitle": "Controls",
   "content1": "In the control room, there are a lot of controls — some heat or cool the PRC, others decrease or increase shield pressure.",
   "content2": "There are 5 ways to cool down the PRC. The first is increasing Stabilization laser power (picture 1); it's recommended to turn on stabilization laser coolant too, since it helps them cool more(picture 2). The second is fans — both Exhaust and Intake fans cool down the PRC (picture 3). You can also increase fan speed for more cooling. The third is increasing shield pressure in the shield pressure controls (by pressing +) (picture 4).",
   "content3": "The fourth way is to use coolant (picture 5). You need to enable the coolant pumps first if they're disabled — the faster the pumps spin, the faster it will cool down. The last way is using E-Coolant (picture 6), which cools the PRC down by a few hundred to 1000-2000 degrees, depending on how much coolant was available. Note that you need at least 10% coolant to use E-Coolant, the temperature must be over 3000, and the shield should be below 80%.",
@@ -429,20 +303,20 @@
   "Shield": { "title": "Shield",
   "subtitle": "Shields",
   "content1": "Reactor Shield is the main part of the PRC which keeps it stable. You must create it before you start up the reactor.",
-  "content2": "",
+  "content2": "Once it was used in the Finnish Army, but it was later aquired by Solaris Corp to use in the PRC.",
   "image": "shield.png"
  },
 
-  "AUX Shield": { "title": "AUX Shield",
+  "AUX Shield": { "title": "Auxiliary Shield",
   "subtitle": "Shields",
-  "content1": "The AUX Shield activates during meltdown to replace the shield and try to keep the core stable. While it's not a full replacement for the reactor shield, since it's weaker, it increases the chance of shutdown.",
+  "content1": "The Auxiliary Shield activates during meltdown to replace the primary shield and try to keep the core stable. While it's not a full replacement for the reactor shield, since it's weaker, it increases the chance of shutdown.",
   "content2": "",
   "image": "AUX shield.png"
  },
 
-  "INT Shield": { "title": "INT Shield",
+  "INT Shield": { "title": "Internal Shield",
   "subtitle": "Shields",
-  "content1": "INT Shield is the last layer of shields, used when the AUX shield can't be activated and the PRC is too unstable.",
+  "content1": "The Internal Shield is the last layer of shields, used when the Auxiliary shield can't be activated and the PRC is too unstable.",
   "content2": "",
   "image": "INT shield.png"
  },
@@ -451,48 +325,8 @@
   "subtitle": "Lasers",
   "content1": "Laser fuel is the fuel that keeps the PRC working. There are 2 types of fuel: stabilization laser fuel and power laser fuel. It needs to be refueled over time, and the time depends on the temperature of the lasers. There should be more features involving fuel in 1.3.0.",
   "content2": "",
-  "image": "maitenancemode.png"
+  "image": ""
  },
-  "Power demands": { "title": "Power demands",
-  "subtitle": "Mechanic",
-  "content1": "Power demands are a mechanic. They give you EXP and credits. To do them, there is a laptop in control room, where it says where you need to keep temperature at. There is also MOE (Margin Of Error). For example, if you need to keep it at 1781c, with MOE of 51c, you need to keep it at 1730-1832c.",
-  "content2": "",
-  "image": "Powerdemand.png"
- },
-   "Credits": { "title": "Credits",
-  "subtitle": "Mechanic",
-  "content1": "Credits are form of money in ACG. You can't give them to someone or get it from someone, but you can get credits by doing tasks depending on the team.",
-  "content2": "If you are maintenance, you can repair fuse boxes which require to buy a fuse from robert's shop. If you are scientist you can only get EXP and Credits from igniting the reactor. You can't get credits/EXP as visitor. You can do ''Out of protocol'', igniting the reactor, do power demands to get EXP/Credits as Reactor Operator. You must be at one of these team to get credits/EXP exactly like it said. For example you can't get Credits from repairing a fuse box if you are scientist.",
-  "image": "Powerdemand.png"
- },
-   "Statuses": { "title": "Statuses",
-  "subtitle": "Mechanic",
-  "content1": "PRC has a lot of statuses. Some of them like ''Project Delta'' can't be activated, but things like SL Fuel low, or Fuel line pressure low are available."
- },
- "science": { "title": "Scientist",
-  "subtitle": "Team",
-  "content1": "Scientist is a team. To get EXP/Credits, you need to ignite the reactor. That's the only way.",
-  "image": "maitenancemode.png"
- },
-  "reaop": { "title": "Reactor Operator",
-  "subtitle": "Team",
-  "content1": "Reactor Operator is a team. To get EXP/Credits, you can do ''Out of protocol'', ignite the reactor or do power demands..",
-  "image": "Powerdemand.png"
- },
-   "visit": { "title": "Visit",
-  "subtitle": "Team",
-  "content1": "Visitor is a team. You can't get EXP/Credits there.",
-  "image": "Powerdemand.png"
- },
-   "maiten": { "title": "Maintenance",
-  "subtitle": "Team",
-  "content1": "Maintenance is a team. You can get EXP/Credits by repairing fuse boxes which require a fuse from robert's shop, it costs 10$."
- },
-
-
-
-
-
 
 "Badges": {
   "subtitle": "If you see this, something might have gone wrong. Report it to me!"
@@ -612,7 +446,7 @@
   "SCDI": { "title": "SCDI",
   "subtitle": "Game",
   "content1": "While unavailable right now, SCDI was a game first named ''ACG: Reimaginated'', a recreation of ACG. It was later renamed to ''Solaris Corporation Development Institute''. The developers are working on a final update.",
-  "content2": ""
+  "content2": "SCDI was made by awakeappled on Roblox and later acquired by Solaris. It will likely be featured in ACG Origins."
  },
 
   "ACG Origins": { "title": "ACG Origins",
@@ -629,7 +463,7 @@
  },
   "Death messages": { "title": "Death messages",
   "subtitle": "Other",
-  "content1": "Death messages are small text which display when you die. Examples are: ''Pernament sleeping subscription detected. Cancelling suscription immediatelly'', or ''Hold on, let me promote you back to...''"
+  "content1": "Death messages are small text which display when you die. Examples are: ''Permanent sleeping subscription detected. Cancelling subscription immediately'', or ''Hold on, let me promote you back to...'' It is unknown if these messages have any lore implication."
  },
   "Terminal": { "title": "Terminal",
   "subtitle": "Other",
@@ -651,7 +485,7 @@
  },
   "Solaris Corporation": { "title": "Solaris Corporation",
   "subtitle": "Lore",
-  "content1": "Solaris Corporation is a lava lamp company... which appears to also be the owner of PRC. Solaris Corporation started as a lava lamp company, but in 1987 they decided to start developing PRC. Solaris stock prices fell from 80 EUR to 30 EUR, and in 2026, they started the PRC."
+  "content1": "Solaris Corporation started as a lava lamp company, but in 1987 they decided to invent the PRC (known at the time as Project Ignite). It was a fusion core (possibly a modified variant of Inertial Containment Fusion) having a reaction sustained by extremely powerful lasers. Solaris stock prices fell from 80 EUR to 30 EUR due to this massive change."
  },
   "SDS": { "title": "SDS",
   "subtitle": "Other",
@@ -671,17 +505,11 @@
  },
   "0.5": { "title": "0.5",
   "subtitle": "Version",
-  "content1": "0.5 was a version of ACG, with a few more variants like 0.55, 0.55a, 0.55b, 0.55+ (mp1), and 0.55++ (mp2). Bunker was added. Every status effect was increased by 500 expect stall and cold. Overheating was at 2000c, critical at 2500 and shield degradation at 3000c."
+  "content1": "0.5 was a version of ACG, with a few more variants like 0.55, 0.55a, 0.55b, 0.55+ (mp1), and 0.55++ (mp2)."
  },
   "0.4": { "title": "0.4",
   "subtitle": "0.4",
-  "content1": "0.4 was a version of ACG. It was made by juustopaketti. Vent system was added, you could go to reactor room, basement and coolant station from it. Your movement speed was lower in vents. News tickets were also added with news every 20 seconds.",
-  "image": "0.4.png"
- },
-   "0.35": { "title": "0.3",
-  "subtitle": "Version",
-  "content1": "0.35 was a version of ACG. It was made by juustopaketti. There were new rooms like coolant station and bunker. EMTS was added. During shield degradation there are now more effects like shaking camera.",
-  "image": "0.3.5.png"
+  "content1": "0.4 was a version of ACG. It was made by nodoubt."
  },
   "0.3": { "title": "0.3",
   "subtitle": "Version",
@@ -689,18 +517,15 @@
  },
   "0.2": { "title": "0.2",
   "subtitle": "Version",
-  "content1": "0.2 was a version of ACG. It was made by juustopaketti. It added things like inspirational quotes, changing reactor to particle sphere, addition of shield creation (not the button), addition of ambient temperature screen,startup sequence turns off lights, freezedown was removed, stabilization lasers will fail after shields fails and self destruct (in meltdown).",
-  "image": "0.2.png"},
-
+  "content1": "0.2 was a version of ACG. It was made by juustopaketti. It still had the black hole event, and the meltdown event too."
+ },
   "0.1": { "title": "0.1",
   "subtitle": "Version",
-  "content1": "0.1 was the second ever version of ACG. It was made by juustopaketti. It had the freezedown black hole event, which was removed later. There was startup button, reactor prime button, coolant control, thermal controls and fan controls. You could do meltdown but there was no shutdown.",
-  "image": "0.2.png"
+  "content1": "0.1 was the second ever version of ACG. It was made by juustopaketti. It had the freezedown black hole event, which was removed later."
  },
   "0.0.5": { "title": "0.0.5",
   "subtitle": "Version",
-  "content1": "0.0.5 was the first ever version of ACG. It was made by JuustoPaketti. It had temperature screen, with temperature of core increasing every 0.2 seconds, at 800c  starts meltdown. There were also 2 stabilization lasers.",
-   "image": "0.0.5.png"
+  "content1": "0.0.5 was the first ever version of ACG. It was made by JuustoPaketti."
  },
   "Fuse boxes": { "title": "Fuse boxes",
   "subtitle": "Mechanic",
